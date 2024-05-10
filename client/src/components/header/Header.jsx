@@ -1,9 +1,28 @@
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import { useState } from "react";
+import { Button, Dropdown, Space } from "antd";
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
+  const items = [
+    {
+      key: "1",
+      label: (
+        <Link className="items_login_nav" to="/login">
+          Login
+        </Link>
+      ),
+    },
+    {
+      key: "2",
+      label: (
+        <Link className="items_login_nav" to="/registration">
+          Create Account
+        </Link>
+      ),
+    },
+  ];
 
   return (
     <>
@@ -28,11 +47,24 @@ export default function Header() {
             <li className="headerNavItem">
               <Link to="https://t.me/coworking_orgmu">Контакты</Link>
             </li>
-            <button>Design you iphone</button>
           </ul>
 
           <div className="headerNavItemLogin">
-            <img src="/public/Group 1088.png" alt="" />
+            <Space direction="vertical">
+              <Space wrap>
+                <Dropdown
+                  menu={{
+                    items,
+                  }}
+                  placement="top"
+                  arrow
+                >
+                  <Button className="headerNavItemLoginButton">
+                    <img src="/public/Group 1088.png" alt="" />
+                  </Button>
+                </Dropdown>
+              </Space>
+            </Space>
           </div>
         </nav>
         <div className="headerMenu">

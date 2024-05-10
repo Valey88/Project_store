@@ -108,6 +108,13 @@
   grid-gap: 0.4rem;
   padding-left: 2.5rem;
 }
+.headerNavItemLoginButton {
+  border: none;
+  width: max-content;
+}
+.items_login_nav {
+  font-size: 1.8rem;
+}
 
 @media (max-width: 1024px) {
   .header {

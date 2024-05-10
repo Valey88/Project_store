@@ -591,9 +591,9 @@ ant-design@^1.0.0:
   resolved "https://registry.npmjs.org/ant-design/-/ant-design-1.0.0.tgz"
   integrity sha512-EiN9oXroImi01yz1xwpDzExb1U5ddi4MYiCTaTLVl8SA3QHXYClJn0BikAYS2IMPzmpmAYhwOgGA2HE/sL/c9g==
 
-antd@^5.16.5:
+antd@^5.17.0:
   version "5.17.0"
-  resolved "https://registry.npmjs.org/antd/-/antd-5.17.0.tgz"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-5.17.0.tgz#60a4d9489b47a07ccddcee42f014b18a936b28e3"
   integrity sha512-jrzMIcaTJIy12/GJ2PfgchgZGuAlDodlaOKd05/TxEtFilRHnv8oaf0qfqNGG3slvvuy4J/57xn21jM4cLl7Hw==
   dependencies:
     "@ant-design/colors" "^7.0.2"

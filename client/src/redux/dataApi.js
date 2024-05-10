@@ -56,7 +56,9 @@ export const dataApi = createApi({
         headers: { "Content-Type": "application/json" },
         method: "POST",
         body: {
-          fio: body.fio,
+          sureName: body.sureName,
+          name: body.name,
+          middleName: body.middleName,
           email: body.email,
           phoneNumber: body.phoneNumber,
           password: body.password,

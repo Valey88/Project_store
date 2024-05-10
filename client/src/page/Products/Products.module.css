@@ -28,7 +28,7 @@
   margin-left: 5.7rem;
   padding: 5rem;
   background-color: #f9fafe;
-  width: 30rem;
+  width: 40rem;
   height: 50rem;
   display: flex;
   align-items: center;
@@ -36,8 +36,22 @@
   grid-gap: 5rem;
 }
 .Products_menu a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background-color: #ab8873;
+  width: 10rem;
+  padding: 1rem;
+  border-radius: 2rem;
   text-decoration: none;
-  color: black;
+  color: #fff;
+}
+.Products_menu_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem;
 }
 .Products_cards {
   margin: 0 auto;

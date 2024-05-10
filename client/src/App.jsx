@@ -6,8 +6,8 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Products from "./page/Products/Products";
 import Product from "./page/product/Product";
-import Registration from "./page/Registration/Registration";
-import Login from "./page/Login/Login";
+import Registration from "./page/Auth/Registration/Registration";
+import Login from "./page/Auth/Login/Login";
 
 function App() {
   return (

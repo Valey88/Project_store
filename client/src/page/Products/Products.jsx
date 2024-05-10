@@ -43,20 +43,23 @@ const Products = () => {
       </div>
       <div className={style.Products_content}>
         <div className={style.Products_menu}>
-          {types?.map((item) => {
-            return (
-              <Link
-                onClick={() => handleTypeClick(item.id)}
-                to={"/products/"}
-                key={item.id}
-              >
-                <div className={style.Products_menu_item}>
+          <div className={style.Products_menu_title}>
+            <h2>Выберите категорию:</h2>
+          </div>
+          <div className={style.Products_menu_item}>
+            {types?.map((item) => {
+              return (
+                <Link
+                  onClick={() => handleTypeClick(item.id)}
+                  to={"/products/"}
+                  key={item.id}
+                >
                   <h2>{item.name}</h2>
                   {/* <button onClick={}>фильтр</button> */}
-                </div>
-              </Link>
-            );
-          })}
+                </Link>
+              );
+            })}
+          </div>
         </div>
         <div className={style.Products_cards}>
           <div className={style.container}>
